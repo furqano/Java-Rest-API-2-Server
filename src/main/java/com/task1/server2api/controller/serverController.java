@@ -33,7 +33,7 @@ public class serverController {
 	
 		
 		
-	// handler method to handle list students and return mode and view
+	// handler method to handle list servers and return mode and view
 	@GetMapping("/servers")
 	public String listServers(Model model) {
 		model.addAttribute("sts", serverService.getAllServers());
@@ -79,7 +79,7 @@ public class serverController {
 		return "redirect:/servers";		
 	}
 	
-	// handler method to handle delete student request
+	// handler method to handle delete servers request
 	@GetMapping("/servers/{name}")
 	public String listServersbyid(@PathVariable String name,Model model) {
 		model.addAttribute("sts", serverService.getServerByName(name));

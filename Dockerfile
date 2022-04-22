@@ -1,6 +1,6 @@
 FROM openjdk:18-jdk-alpine
 
-COPY *.jar /app.jar
+COPY ./target/*.jar /app.jar
 
 EXPOSE 6039
 
